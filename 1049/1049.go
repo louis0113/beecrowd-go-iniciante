@@ -46,6 +46,6 @@ func main() {
 			}
 		}
 	}
-	
+
 	fmt.Println(animal)
 }

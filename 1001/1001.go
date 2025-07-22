@@ -1,17 +1,17 @@
 package main
- 
+
 import (
-    "fmt"
+	"fmt"
 )
- 
+
 func main() {
 
-  var a,b int
-  
-  fmt.Scanf("%d\n %d\n", &a, &b)
-  
-  soma := a + b
-  
-  fmt.Println("X =", soma)
+	var a, b int
+
+	fmt.Scanf("%d\n %d\n", &a, &b)
+
+	soma := a + b
+
+	fmt.Println("X =", soma)
 
 }

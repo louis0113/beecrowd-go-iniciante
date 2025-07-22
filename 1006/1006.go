@@ -1,20 +1,20 @@
 package main
- 
+
 import (
-    "fmt"
+	"fmt"
 )
-const pesoA, pesoB, pesoC = 2.0,3.0,5.0
- 
+
+const pesoA, pesoB, pesoC = 2.0, 3.0, 5.0
+
 func main() {
 
-var a,b,c float64
+	var a, b, c float64
 
-fmt.Scanf("%g\n%g\n%g\n", &a, &b, &c)
+	fmt.Scanf("%g\n%g\n%g\n", &a, &b, &c)
 
+	totalPesos := pesoA + pesoB + pesoC
 
-totalPesos := pesoA + pesoB + pesoC
+	media := (pesoA*a + pesoB*b + pesoC*c) / totalPesos
 
-media := (pesoA * a + pesoB * b + pesoC * c ) / totalPesos
-
-fmt.Printf("MEDIA = %.1f\n", media)
+	fmt.Printf("MEDIA = %.1f\n", media)
 }

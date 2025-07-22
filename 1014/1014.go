@@ -1,19 +1,18 @@
 package main
- 
+
 import (
-    "fmt"
+	"fmt"
 )
- 
+
 func main() {
 
-var x int
-var y float32
+	var x int
+	var y float32
 
-fmt.Scanf("%d\n%f\n ", &x, &y)
+	fmt.Scanf("%d\n%f\n ", &x, &y)
 
+	resultado := float32(x) / y
 
-resultado := float32(x) / y
-
-fmt.Printf("%.3f km/l\n", resultado)
+	fmt.Printf("%.3f km/l\n", resultado)
 
 }

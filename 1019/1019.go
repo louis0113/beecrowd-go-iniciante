@@ -1,26 +1,25 @@
 package main
 
 import (
-  "fmt"
+	"fmt"
 )
 
 func main() {
 
-  var n int
+	var n int
 
-  fmt.Scanln(&n)
+	fmt.Scanln(&n)
 
+	horas := n / 3600
 
-  horas := n / 3600
+	n %= 3600
 
-  n%= 3600
+	minutos := n / 60
 
-  minutos:= n / 60
+	n %= 60
 
-  n%= 60
+	segundos := n
 
-  segundos:= n
-
-  fmt.Printf("%d:%d:%d\n", horas, minutos, segundos)
+	fmt.Printf("%d:%d:%d\n", horas, minutos, segundos)
 
 }

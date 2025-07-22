@@ -1,21 +1,21 @@
 package main
 
 import (
-  "fmt"
+	"fmt"
 )
 
 func main() {
 
-  var a,b,c,d int
+	var a, b, c, d int
 
-  fmt.Scanf("%d %d %d %d\n", &a, &b, &c, &d)
+	fmt.Scanf("%d %d %d %d\n", &a, &b, &c, &d)
 
-  if b > c && d > a && (c+d) > (a+b) && c > 0 && d > 0 && a%2 == 0{
-    fmt.Println("Valores aceitos")
+	if b > c && d > a && (c+d) > (a+b) && c > 0 && d > 0 && a%2 == 0 {
+		fmt.Println("Valores aceitos")
 
-  } else {
+	} else {
 
-    fmt.Println("Valores nao aceitos")
-  }
+		fmt.Println("Valores nao aceitos")
+	}
 
 }

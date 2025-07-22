@@ -1,17 +1,17 @@
 package main
- 
+
 import (
-    "fmt"
+	"fmt"
 )
- 
+
 func main() {
 
-var x int 
+	var x int
 
-fmt.Scanf("%v\n", &x)
+	fmt.Scanf("%v\n", &x)
 
-time := x * 2
+	time := x * 2
 
-fmt.Printf("%v minutos\n", time)
+	fmt.Printf("%v minutos\n", time)
 
 }
