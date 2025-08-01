@@ -7,27 +7,32 @@ import (
 
 func main() {
 
-	var n int
-
+	var n, r int
+	var rf float64
 	fmt.Scanln(&n)
 
-	var values [3]float64
+	for i := 1; i <= n; i++ {
 
-	for x := 1; x <= n; x++ {
+		for x := 0; x < 2; x++ {
 
-		for i := 0; i < 3; i++ {
-			for c := 0; c < 2; c++ {
-				values[i] = math.Pow(float64(x), float64((i + 1)))
-				if i == 3 {
-					fmt.Printf("%d\n", int(values[i]))
+			for a := 1; a <= 3; a++ {
+				rf = math.Pow(float64(i), float64(a))
 
+				r = int(rf)
+
+				if x == 1 && a > 1 {
+					r++
+				}
+
+				if a != 3 {
+					fmt.Printf("%d ", r)
 				} else {
-					fmt.Printf("%d ", int(values[i]))
+					fmt.Printf("%d\n", r)
 				}
 
 			}
+
 		}
 
 	}
-
 }
