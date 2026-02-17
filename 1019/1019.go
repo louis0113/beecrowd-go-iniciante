@@ -4,22 +4,18 @@ import (
 	"fmt"
 )
 
-func main() {
-
-	var n int
-
-	fmt.Scanln(&n)
-
-	horas := n / 3600
-
+func calcularTempo(n int) (h, m, s int) {
+	h = n / 3600
 	n %= 3600
-
-	minutos := n / 60
-
+	m = n / 60
 	n %= 60
+	s = n
+	return
+}
 
-	segundos := n
-
+func main() {
+	var n, horas, minutos, segundos int
+	fmt.Scanln(&n)
+	horas, minutos, segundos = calcularTempo(n)
 	fmt.Printf("%d:%d:%d\n", horas, minutos, segundos)
-
 }

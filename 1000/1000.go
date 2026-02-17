@@ -4,8 +4,13 @@ import (
 	"fmt"
 )
 
+func helloWorld() string {
+	var hw string
+	hw = "Hello World"
+	return hw
+}
+
 func main() {
-
-	fmt.Println("Hello World!")
-
+	hello := helloWorld()
+	fmt.Println(hello)
 }

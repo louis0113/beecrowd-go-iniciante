@@ -6,13 +6,14 @@ import (
 
 const kml = 12
 
+func calcularLitros(h, k int) float64{
+	litros := (float64(h) * float64(k)) / float64(kml)
+	return litros
+}
+
 func main() {
-
 	var horas, kmh int
-
 	fmt.Scanf("%v\n%v\n", &horas, &kmh)
-
-	litros := (float64(horas) * float64(kmh)) / float64(kml)
-
-	fmt.Printf("%.3f\n", litros)
+	r := calcularLitros(horas,kmh)
+	fmt.Printf("%.3f\n", r)
 }

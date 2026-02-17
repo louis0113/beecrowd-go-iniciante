@@ -6,28 +6,23 @@ import (
 )
 
 func main() {
-
 	var a, b, c int
-
 	fmt.Scanf("%d %d %d\n", &a, &b, &c)
+	numbers(a,b,c)
+}
 
-	numeros := []int{a, b, c}
-
-	numerosCresc := []int{a, b, c}
-
+func numbers(x,y,z int){
+	numeros := []int{x, y, z}
+	numerosCresc := []int{x, y, z}
 	sort.Ints(numerosCresc)
-
-	print(numerosCresc)
+	printNumbers(numerosCresc)
 	fmt.Println()
-	print(numeros)
+	printNumbers(numeros)
 
 }
 
-func print(nums []int) {
-
-	for i := 0; i < len(nums); i++ {
+func printNumbers(nums []int) {
+	for i := range len(nums) {
 		fmt.Println(nums[i])
-
 	}
-
 }
