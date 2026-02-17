@@ -6,13 +6,14 @@ import (
 	"sort"
 )
 
-func main() {
-	var a, b, c float64
-	fmt.Scanf("%g %g %g\n", &a, &b, &c)
-	lados := []float64{a, b, c}
+func ordernarLados(lados []float64) []float64 {
 	sort.Slice(lados, func(i, j int) bool {
 		return lados[i] > lados[j]
 	})
+	return lados
+}
+
+func manySwitch(lados []float64) {
 	switch {
 	case lados[0] >= lados[1]+lados[2]:
 		fmt.Println("NAO FORMA TRIANGULO")
@@ -32,4 +33,11 @@ func main() {
 			fmt.Println("TRIANGULO ISOSCELES")
 		}
 	}
+}
+func main() {
+	var a, b, c float64
+	fmt.Scanf("%g %g %g\n", &a, &b, &c)
+	lados := []float64{a, b, c}
+	ladosOrdenados := ordernarLados(lados)
+	manySwitch(ladosOrdenados)
 }

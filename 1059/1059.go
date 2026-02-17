@@ -4,14 +4,14 @@ import (
 	"fmt"
 )
 
-func main() {
-
-	for x := 1; x < 101; x++ {
-
-		if x%2 == 0 {
+func mostrarPares() {
+	for x := range 101{
+		if x%2 == 0 && x != 0 {
 			fmt.Println(x)
 		}
-
 	}
+}
 
+func main() {
+	mostrarPares()
 }

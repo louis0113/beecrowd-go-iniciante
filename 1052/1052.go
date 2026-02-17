@@ -4,12 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
-
-	var month int
-	var month_name string
-
-	fmt.Scanln(&month)
+func chooseMonth(month int) (month_name string) {
 	switch month {
 	case 1:
 		month_name = "January"
@@ -36,6 +31,12 @@ func main() {
 	case 12:
 		month_name = "December"
 	}
+	return
+}
 
-	fmt.Println(month_name)
+func main() {
+	var month int
+	fmt.Scanln(&month)
+	r := chooseMonth(month)
+	fmt.Println(r)
 }

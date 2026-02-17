@@ -4,14 +4,8 @@ import (
 	"fmt"
 )
 
-func main() {
-
-	var ddd uint8
-	var estado string
-	fmt.Scanln(&ddd)
-
+ func qualEstado(ddd uint8)(estado string){
 	switch ddd {
-
 	case 61:
 		estado = "Brasilia"
 	case 71:
@@ -31,6 +25,11 @@ func main() {
 	default:
 		estado = "DDD nao cadastrado"
 	}
-
+	return
+ }
+func main() {
+	var ddd uint8
+	fmt.Scanln(&ddd)
+	estado := qualEstado(ddd)
 	fmt.Println(estado)
 }

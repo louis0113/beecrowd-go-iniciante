@@ -4,18 +4,19 @@ import (
 	"fmt"
 )
 
-func main() {
-
-	var values [6]float64
+func totalPositivo(arr [6]float64) int {
 	c := 0
-	for x := 0; x < 6; x++ {
-		fmt.Scanln(&values[x])
-
-		if values[x] > 0.0 {
+	for x := range 6 {
+		fmt.Scanln(&arr[x])
+		if arr[x] > 0.0 {
 			c++
 		}
-
 	}
+	return c
+}
 
-	fmt.Printf("%d valores positivos\n", c)
+func main() {
+	var values [6]float64
+	r := totalPositivo(values)
+	fmt.Printf("%d valores positivos\n", r)
 }
