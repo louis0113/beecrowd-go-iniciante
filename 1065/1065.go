@@ -4,20 +4,18 @@ import (
 	"fmt"
 )
 
-func main() {
-
-	var values [5]int
-	c := 0
-
-	for x := 0; x < len(values); x++ {
-
-		fmt.Scanln(&values[x])
-
-		if values[x]%2 == 0 {
+func numerosPares(nums [5]int)(c int){
+	c = 0;
+	for x := range 5{
+		fmt.Scanln(&nums[x])
+		if nums[x]%2 == 0 {
 			c++
 		}
-
 	}
-
+	return
+}
+func main() {
+	var values [5]int
+	c := numerosPares(values)
 	fmt.Printf("%d valores pares\n", c)
 }

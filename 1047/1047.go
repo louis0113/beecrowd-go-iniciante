@@ -9,7 +9,6 @@ const m2 = "HORA(S)"
 const m1 = "O JOGO DUROU"
 
 func horasMinutos(horaInicial, minutoInicial, horaFinal, minutoFinal int) (horaAtual, minutoAtual int) {
-
 	if horaInicial < horaFinal && minutoInicial == minutoFinal {
 		horaAtual = horaFinal - horaInicial
 		minutoAtual = 0

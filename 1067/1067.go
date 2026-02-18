@@ -5,17 +5,11 @@ import (
 )
 
 func main() {
-
 	var x int
-
 	fmt.Scanln(&x)
-
-	for c := 0; c <= x; c++ {
-
+	for c := range x {
 		if c%2 == 1 {
 			fmt.Println(c)
 		}
-
 	}
-
 }
