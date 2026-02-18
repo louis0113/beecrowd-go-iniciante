@@ -5,17 +5,22 @@ import (
 )
 
 func main() {
-	var x, i int
+	var x int
 	fmt.Scanln(&x)
-	if x%2 == 0 {
-		i = x + 12
-		loop(x, i)
-	} else {
-		i = x + 10
-		loop(x, i)
-	}
+	initFunc(x)
 }
 
+func initFunc(a int){
+	var b int
+	if a%2 == 0 {
+		b = a + 12
+		loop(a, b)
+	} else {
+		b = a + 10
+		loop(a, b)
+	}
+
+}
 func loop(i, in int) {
 	for c := i; c <= in; c++ {
 		if c%2 == 1 {

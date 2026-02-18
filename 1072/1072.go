@@ -4,18 +4,22 @@ import (
 	"fmt"
 )
 
-func main() {
-	var input int
-	in, out := 0, 0
-	fmt.Scanln(&input)
-	values := make([]int, input)
-	for x := range len(values) {
-		fmt.Scanln(&values[x])
-		if values[x] >= 10 && values[x] <= 20 {
+func dentroIntervalo(v []int)(in, out int){
+	for x := range len(v) {
+		fmt.Scanln(&v[x])
+		if v[x] >= 10 && v[x] <= 20 {
 			in++
 		} else {
 			out++
 		}
 	}
-	fmt.Printf("%d in\n%d out\n", in, out)
+	return
+}
+
+func main() {
+	var input int
+	fmt.Scanln(&input)
+	values := make([]int, input)
+	dentro, fora := dentroIntervalo(values)
+	fmt.Printf("%d in\n%d out\n", dentro, fora)
 }

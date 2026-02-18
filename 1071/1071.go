@@ -4,15 +4,19 @@ import (
 	"fmt"
 )
 
-func main() {
-	var x, y int
-	fmt.Scanln(&x)
-	fmt.Scanln(&y)
-	soma := 0
-	for c := (y + 1); c < x; c++ {
+func soma(a,b int)(soma int){
+	soma = 0
+	for c := (b + 1); c < a; c++ {
 		if c%2 == 1 || c%2 == -1 {
 			soma += c
 		}
 	}
-	fmt.Println(soma)
+return
+}
+
+func main() {
+	var x, y int
+	fmt.Scanf("%d\n%d\n",&x, &y)
+	s := soma(x,y)
+	fmt.Println(s)
 }

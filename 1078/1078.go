@@ -4,11 +4,16 @@ import (
 	"fmt"
 )
 
-func main() {
-	var n, mult int
-	fmt.Scanln(&n)
+func mult(a int){
+	var mult int
 	for x := 1; x < 11; x++ {
-		mult = x * n
-		fmt.Printf("%d x %d = %d\n", x, n, mult)
+		mult = x * a
+		fmt.Printf("%d x %d = %d\n", x, a, mult)
 	}
+
+}
+func main() {
+	var n int
+	fmt.Scanln(&n)
+	mult(n)
 }
