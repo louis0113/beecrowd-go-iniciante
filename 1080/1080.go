@@ -3,6 +3,9 @@ package main
 import (
 	"fmt"
 )
+func calculos(){
+
+}
 
 func main() {
 	var values [100]int

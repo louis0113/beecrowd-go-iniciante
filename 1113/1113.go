@@ -5,9 +5,7 @@ import (
 )
 
 func main() {
-
 	var x, y int
-
 	for {
 		fmt.Scanf("%d %d\n", &x, &y)
 
@@ -19,5 +17,4 @@ func main() {
 			break
 		}
 	}
-
 }

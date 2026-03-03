@@ -1,0 +1,29 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main () {
+	
+	var (
+		n int
+		v []string
+		v2 [][]string
+	)
+
+	fmt.Scan(&n)
+	
+	arr := make([]string, n)
+
+	for x := range len(arr){
+		fmt.Scan(&arr[x])
+		v = strings.Split(arr[x], "")
+		v2 = append(v2,v)
+	}
+
+	fmt.Println(v2)
+
+
+}

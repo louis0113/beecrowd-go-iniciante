@@ -4,19 +4,23 @@ import (
 	"fmt"
 )
 
-const p1, p2, p3 = 2.0, 3.0, 5.0
-const totalPesos = p1 + p2 + p3
+const ( 
+	p1, p2, p3 = 2.0, 3.0, 5.0
+ 	totalPesos = p1 + p2 + p3
+)
+
+func  calcularMedias(){
+	
+} 
 
 func main() {
 	var n int
 	fmt.Scanln(&n)
-	soma := 0.0
-	x := 0
-	z := 0
+	soma, x, z := 0.0, 0,0
 	totallen := n * 3
 	values := make([]float64, totallen)
 	medias := make([]float64, n)
-	pesos := [...]float64{p1, p2, p3}
+	pesos := [3]float64{p1, p2, p3}
 	for x < n {
 		for i := range 3{
 			if i == 2 {

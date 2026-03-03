@@ -5,11 +5,8 @@ import (
 )
 
 func main() {
-
 	var x, y int
-
 	for {
-
 		fmt.Scanf("%d %d\n", &x, &y)
 
 		if x > 0 && y > 0 {
@@ -23,7 +20,5 @@ func main() {
 		} else {
 			break
 		}
-
 	}
-
 }
